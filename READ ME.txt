@@ -1,0 +1,7 @@
+******************HOW TO CHANGE THE MOVIE DATABASE API_KEY*******************
+After Open the project in IDE such as android studio,
+
+- Go 'Gradle Scripts=>gradle.properties' file and then find key named 'api_key'
+- Replace the value (YOUR_API_KEY) by yours.
+
+*********************BUILD AND RUN THE APP-----ENJOY************************

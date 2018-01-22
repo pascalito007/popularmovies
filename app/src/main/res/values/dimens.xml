@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="four_dp_dim">4dp</dimen>
+    <dimen name="ten_dp_dim">10dp</dimen>
+    <dimen name="one_handred_fifty_dp_dim">150dp</dimen>
+    <dimen name="twenty_dp_dim">20dp</dimen>
+    <dimen name="ten_sp_dim">20sp</dimen>
+    <dimen name="sixten_dp_dim">16dp</dimen>
+    <dimen name="fourty_two_dp_dim">42dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="terty_two_dp_dim">32dp</dimen>
+    <dimen name="zero_dp_dim">0dp</dimen>
+    <dimen name="height_dp_dim">8dp</dimen>
+    <dimen name="two_dp_dim">2dp</dimen>
+    <dimen name="one_dp_dim">1dp</dimen>
+</resources>

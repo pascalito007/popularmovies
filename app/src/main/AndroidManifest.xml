@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.popularmovies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/popular_movies_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/popular_movies_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.popularmovies.MainActivity" />
+        </activity>
+
+        <provider
+            android:name=".data.MoovieListProvider"
+            android:authorities="com.example.android.popularmovies.moovie_list"
+            android:exported="false" />
+        <provider
+            android:name=".data.ReviewsProvider"
+            android:authorities="com.example.android.popularmovies.reviews"
+            android:exported="false" />
+        <provider
+            android:name=".data.TrailersProvider"
+            android:authorities="com.example.android.popularmovies.trailers"
+            android:exported="false" />
+        <provider
+            android:name=".data.GenreProvider"
+            android:authorities="com.example.android.popularmovies.genre"
+            android:exported="false" />
+
+        <service
+            android:name=".sync.MoovieSyncIntentService"
+            android:exported="false" />
+        <service
+            android:name=".sync.DetailsSyncIntentService"
+            android:exported="false" />
+        <service
+            android:name=".sync.ReviewsSyncIntentService"
+            android:exported="false" />
+        <service
+            android:name=".sync.MooviesFirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ReviewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_reviews"
+            android:parentActivityName=".DetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.popularmovies.DetailsActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.popularmovies.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

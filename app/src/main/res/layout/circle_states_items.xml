@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="packed">
+
+        <TextView
+            android:id="@+id/tv_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_inside_circle_shape"
+            android:gravity="center"
+            android:text="1024"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_popularity"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_inside_circle_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Votes"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_vote"
+            app:layout_constraintRight_toRightOf="@+id/tv_vote"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vote" />
+
+
+        <TextView
+            android:id="@+id/tv_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_inside_circle_shape"
+            android:gravity="center"
+            android:text="9.5"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toRightOf="@+id/tv_vote"
+            app:layout_constraintRight_toLeftOf="@+id/tv_language"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_inside_circle_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_popularity"
+            app:layout_constraintRight_toRightOf="@+id/tv_popularity"
+            app:layout_constraintTop_toBottomOf="@+id/tv_popularity" />
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_inside_circle_shape"
+            android:gravity="center"
+            android:text="EN"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toRightOf="@+id/tv_popularity"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_inside_circle_shape" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_language"
+            app:layout_constraintRight_toRightOf="@+id/tv_language"
+            app:layout_constraintTop_toBottomOf="@+id/tv_language"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>

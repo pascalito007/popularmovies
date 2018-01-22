@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_movie_sorting_options_label">
+        <item>@string/pref_movie_popular_label</item>
+        <item>@string/pref_movie_rated_label</item>
+        <item>@string/pref_movie_favorits_label</item>
+    </string-array>
+    <string-array name="pref_movie_sorting_values">
+        <item>@string/pref_movie_popular_value</item>
+        <item>@string/pref_movie_rated_value</item>
+        <item>@string/pref_movie_favorits_value</item>
+    </string-array>
+</resources>

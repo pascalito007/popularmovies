@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="tv_error_message">Faild to retrieve movies. Please try again</string>
+    <string name="main_refresh_icon">Refresh</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="overview_content">A live-action adaptation of Disney\'s version of the classic \'Beauty and the Beast\' tale of a cursed prince and a beautiful young woman who helps him break the spell.</string>
+    <string name="user_rating_content">6.8</string>
+    <string name="release_date_content">2015-06-17</string>
+    <string name="title_content">Pirate des caraibes</string>
+    <string name="popular_criteria">POPULAR</string>
+    <string name="top_rated_criteria">TOP RATED</string>
+    <string name="api_key">767fda24943eced8903a4cac0c1a8cff</string>
+    <string name="lorem_ipsum_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod lacus in ex pulvinar posuere. Morbi ut volutpat tellus, non venenatis lectus.</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pref_movie_rated_label">Top rated</string>
+    <string name="pref_movie_popular_label">Most popular</string>
+    <string name="pref_movie_favorits_label">Favorits</string>
+
+    <string name="pref_movie_rated_value">top_rated</string>
+    <string name="pref_movie_popular_value">popular</string>
+    <string name="pref_movie_favorits_value">favorit</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="pref_movies_key">pref_movies_key</string>
+    <string name="pref_movies_title">Sorting criteria</string>
+    <string name="reviews_str">Reviews...</string>
+    <string name="trailers_str">Trailers</string>
+    <string name="vote_average_str">6.90</string>
+    <string name="tv_year_str">2015</string>
+    <string name="reviews_lbl">Reviews</string>
+    <string name="author_str">Jean-Pascal MEWENEMESSE</string>
+    <string name="trailer_lbl">Trailer</string>
+</resources>
